@@ -12,7 +12,7 @@ xmlhttp.onreadystatechange=function(){
         state={
             'queryset': JSON.parse(this.responseText),
             'page':1,
-            'rows':2
+            'rows':3
         }
     }
 }
@@ -91,7 +91,6 @@ window.addEventListener('load', function() {
 // search
 btn_search.addEventListener("click", function(){
     arrow.pop()
-    let check=true;
     let array=state.queryset
     for (let i = 0; i < array.length; i++) {
         if(input_search.value=="")
